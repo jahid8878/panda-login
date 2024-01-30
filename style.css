@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .head .all-kan{
+    display: flex;
+    gap: 45px;
+    margin-left: 90px;
+    margin-bottom: -20px;
+}
+.container .head .all-kan .kan{
+    background-color: #444;
+    height: 35px;
+    width: 35px;
+    margin-bottom: 5px;
+    border-radius: 45% 45% 0px 0px;
+    z-index: -1;
+}
+.container .head .all-kan .left-kan{
+    transform: rotate(-45deg) translate(-10px, 4px);
+}
+
+.container .head .all-kan .right-kan{
+    transform: rotate(45deg) translate(10px);
+}
+
+
+
+.container .full-head{
+    background-color: rgb(225, 225, 228);
+    height: 95px;
+    width: 110px;
+    border-radius: 50% 50% 45% 45%;
+    margin-left: 95px;
+    margin-bottom: -2px;
+}
+.container .full-head .all-eyes{
+    display: flex;
+    gap: 17px;
+    margin-left: 22px;
+}
+.container .full-head .all-eyes .eye{
+    height: 30px;
+    width: 25px;
+    background-color: #333;
+    border-radius: 45%;
+    margin-top: 25px;
+    filter: drop-shadow(0px 0px 3px #333);
+    z-index: 1;
+}
+.container .full-head .all-eyes .left-eye{
+    transform: rotate(-20deg);
+}
+.container .full-head .all-eyes .right-eye{
+    transform: rotate(20deg);
+}
+.container .full-head .all-eyes .eye .eye-moni{
+    background-color: aliceblue;
+    height: 7px;
+    width: 7px;
+    border-radius: 45%;
+    margin-left: 9px;
+    margin-top: 9.5px;
+    transition: ease 0.5s;
+}
+.container .full-head .all-nose .nose{
+    height: 15px;
+    width: 15px;
+    background-color: #333;
+    transform: rotate(45deg);
+    margin-left: 47px;
+    border-radius: 10px 2px 2px 2px;
+    filter: drop-shadow(0px 0px 3px #333);
+}
+.container .full-head .all-nose .khara{
+    height: 8px;
+    width: 2px;
+    background-color: #333;
+    margin-left: 54px;
+    filter: drop-shadow(0px 0px 2px #333);
+}
+.container .full-head .all-nose .mukh{
+    display: flex;
+    margin-left: 40px;
+}
+.container .full-head .all-nose .mukh .nose-down{
+    height: 5px;
+    width: 15px;
+    background-color: rgb(225, 225, 228);
+    border-bottom: 3px solid #333;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-radius: 0px 0px 5px 5px;
+}
+.container .formm .all-hand{
+    display: flex;
+    gap: 140px;
+    position: absolute;
+    top: -12px;
+    left: 50px;
+}
+.container .formm .active .all-hand{
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    top: -80px;
+    left: 100px;
+    transition: ease 0.5s;
+}
+
+.container .formm .all-hand .hand{
+    height: 35px;
+    width: 30px;
+    background-color: #444;
+    border-radius: 0px 0px 45% 45%;
+}
+
+ .container .formm .active .all-hand .hand{
+    height: 100px;
+    width: 30px;
+    background-color: #333;
+    border-radius: 100px 100px 0px 0px;
+    transform: rotate(30deg);
+    z-index: 5000;
+    transition: ease 0.5s;
+ }
+
+ .container .formm .active .all-hand .right-hand{
+    transform: rotate(-30deg);
+ }
+
+
+
+.container .formm{
+   background-color: aliceblue;
+   height: 270px;
+   width: 300px;
+   padding: 40px 30px 60px;
+   border-radius: 5px;
+   position: relative;
+
+}
+.container .formm .label{
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.container .formm .input{
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-bottom: 20px;
+    border-bottom: 2px solid gray;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+.container .formm .input:focus{
+    border-bottom: 2px solid greenyellow;
+}
+.container .formm .btn{
+    width: 100%;
+    background-color: crimson;
+    outline: none;
+    border: none;
+    height: 40px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+.container .formm .btn:hover{
+    background-color: rgb(247, 4, 52);
+    transform: scale(0.95);
+    
+}
+.container .formm i{
+   position: absolute;
+   right: 35px;
+   bottom: 120px;
+   cursor: pointer;
+   transition: ease 0.5s;
+}
+.container .down-side{
+    display: flex;
+    margin-left: 66.66px;
+    gap: 66.66px;
+}
+.container .leg{
+    background-color: #333;
+    height: 50px;
+    width: 50px;
+    border-radius: 50% 50% 5px 5px;
+    position: relative;
+    top: -27px;
+    padding: 5px;
+    z-index: 100;
+}
+.container .leg .leg-inter-big{
+    background-color: #e4e2e2e0;
+    height: 25px;
+    width: 35px;
+    border-radius: 65% 65% 5px 5px;
+    position: absolute;
+    bottom: 7px;
+    left: 7.5px;
+}
+.container .leg .leg-inter-smal{
+    background-color: #ffffffd5;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    position: absolute;
+}
+.container .leg .leg-smal1{
+    top: 12px;
+    left: 3px;
+}
+.container .leg .leg-smal2{
+    top: 7px;
+    left: 20px;
+}
+.container .leg .leg-smal3{
+    top: 12px;
+    right: 3px;
+}
